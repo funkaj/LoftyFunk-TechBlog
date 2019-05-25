@@ -1,7 +1,6 @@
-## Tech Blog
+# Tech Blog
 
-
-# Technologies
+## Technologies
 * Gatsby
 * React
 * Javascript
