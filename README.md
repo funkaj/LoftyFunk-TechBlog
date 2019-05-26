@@ -1,5 +1,5 @@
 # Tech Blog
-
+deployed at Netlify at loftyfunk.netlify.com
 ## Getting Started
 * Clone Repo
 * Open favored terminal and run < npm install >
