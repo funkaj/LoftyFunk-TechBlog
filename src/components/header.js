@@ -30,6 +30,7 @@ const Header = ({ siteTitle }) => (
         href="https://github.com/funkaj/LoftyFunk-TechBlog"
         style={{ color: "white", float: "right" }}
         title="github"
+        target="blank"
       >
         Github
       </a>
