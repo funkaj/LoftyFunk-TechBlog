@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <a
-        href="https://github.com/saigowthamr/gatsbyblog-starter"
+        href="https://github.com/funkaj/LoftyFunk-TechBlog"
         style={{ color: "white", float: "right" }}
         title="github"
       >
