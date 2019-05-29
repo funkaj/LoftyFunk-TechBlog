@@ -3,6 +3,10 @@
   "description": "Personal Tech Blog",
   "version": "1.0.0",
   "author": "Adam Funk <b.kimate@gmail.com>",
+  "contributors": [
+    "Adam Funk <b.kimate@gmail.com>",
+    "Jesse Loftus <jesse.loftus@gmail.com>"
+  ],
   "dependencies": {
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.9",
@@ -34,6 +38,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/funkaj/LoftyFunk-TechBlog"
   }
 }
