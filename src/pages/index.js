@@ -6,17 +6,19 @@ import Layout from "../components/layout"
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
   return (
-    <Layout>
-      {postList.edges.map(({ node }, i) => (
-        <Link to={node.fields.slug} key={i} className="link">
-          <div className="post-list">
-            <h1>{node.frontmatter.title}</h1>
-            <span>{node.frontmatter.date}</span>
-            <p>{node.excerpt}</p>
-          </div>
-        </Link>
-      ))}
-    </Layout>
+    <div style={{ backgroundColor: "#F7FFF7", height: "100vh" }}>
+      <Layout>
+        {postList.edges.map(({ node }, i) => (
+          <Link to={node.fields.slug} key={i} className="link">
+            <div className="post-list">
+              <h1>{node.frontmatter.title}</h1>
+              <span>{node.frontmatter.date}</span>
+              <p>{node.excerpt}</p>
+            </div>
+          </Link>
+        ))}
+      </Layout>
+    </div>
   )
 }
 

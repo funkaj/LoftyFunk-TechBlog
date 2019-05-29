@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: "rebeccapurple",
+      background: "#292F36",
       marginBottom: "1.45rem",
     }}
   >
@@ -19,20 +19,26 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: "white",
+            color: "#FFE66D",
             textDecoration: "none",
           }}
         >
           {siteTitle}
         </Link>
       </h1>
+
       <a
         href="https://github.com/funkaj/LoftyFunk-TechBlog"
-        style={{ color: "white", float: "right" }}
+        style={{
+          color: "#FFE66D",
+          float: "right",
+          marginTop: -50,
+          textDecoration: "none",
+        }}
         title="github"
         target="blank"
       >
-        Github
+        <i class="fab fa-github-alt fa-3x" />
       </a>
     </div>
   </div>
