@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 const Header = ({ siteTitle }) => (
   <div
     style={{
@@ -38,7 +40,7 @@ const Header = ({ siteTitle }) => (
         title="github"
         target="blank"
       >
-        <i class="fab fa-github-alt fa-3x" />
+        <FontAwesomeIcon icon={["fab", "github-alt"]} size="3x" />
       </a>
     </div>
   </div>

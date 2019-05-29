@@ -5,6 +5,12 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
+
+library.add(fab, faGithubAlt)
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
