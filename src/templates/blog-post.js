@@ -8,7 +8,7 @@ import { graphql } from "gatsby"
 function BlogPost(props) {
   const post = props.data.markdownRemark
   const url = props.data.site.siteMetadata.siteUrl
-  const { title, description } = post.frontmatter
+  const { title, description, author } = post.frontmatter
   const thumbnail =
     post.frontmatter.image && post.frontmatter.image.childImageSharp.resize.src
 
@@ -16,6 +16,7 @@ function BlogPost(props) {
     <Layout>
       <Metatags
         title={title}
+        author={author}
         description={description}
         thumbnail={thumbnail ? url + thumbnail : url + Icon}
         url={url}
@@ -23,6 +24,7 @@ function BlogPost(props) {
       />
       <div>
         <h1>{title}</h1>
+        <p>By: {author}</p>
         {thumbnail && (
           <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
         )}
@@ -40,6 +42,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
         description
         image {
           childImageSharp {
