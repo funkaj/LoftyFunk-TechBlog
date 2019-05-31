@@ -15,10 +15,4 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - {
-                label: Image,
-                name: image,
-                required: false,
-                hint: "If an image isn't specified, a default headshot placeholder image will be used",
-                widget: image,
-              },
+      - { label: Image, name: image, required: false, hint: "If an image isn't specified, a default headshot placeholder image will be used", widget: image, },
