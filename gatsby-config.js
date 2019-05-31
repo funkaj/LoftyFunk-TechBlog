@@ -34,5 +34,12 @@ module.exports = {
         name: "blog",
       },
     },
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
   ],
 }
