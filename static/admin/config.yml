@@ -3,17 +3,19 @@ backend:
   repo: funkaj/LoftyFunk-TechBlog
 
 media_folder: blog
-public_folder: blog
+public_folder: '.'
 
 collections:
   - name: blog
     label: Blog
     folder: blog
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: author, label: Author }
       - { name: body, label: Body, widget: markdown }
       - {
           label: Image,
@@ -21,4 +23,5 @@ collections:
           required: false,
           hint: "If an image isn't specified, a default headshot placeholder image will be used",
           widget: image,
+          default: assets/5star.png
         }
