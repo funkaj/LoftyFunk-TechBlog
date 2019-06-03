@@ -2,8 +2,8 @@ backend:
   name: github
   repo: funkaj/LoftyFunk-TechBlog
 
-media_folder: blog
-public_folder: blog
+media_folder: static/assets
+public_folder: assets
 
 collections:
   - name: blog
