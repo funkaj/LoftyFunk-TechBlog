@@ -22,5 +22,5 @@ collections:
           name: image,
           required: false,
           widget: image,
-          default: assets/5star.png
+          default: /assets/bossimg.png
         }
