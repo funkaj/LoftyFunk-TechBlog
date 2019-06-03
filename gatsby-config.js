@@ -17,10 +17,17 @@ module.exports = {
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
+    `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-remark-images`,
+      options: {
+        maxWidth: 1080,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

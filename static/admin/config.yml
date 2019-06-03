@@ -3,7 +3,7 @@ backend:
   repo: funkaj/LoftyFunk-TechBlog
 
 media_folder: blog
-public_folder: '.'
+public_folder: blog
 
 collections:
   - name: blog
@@ -21,7 +21,6 @@ collections:
           label: Image,
           name: image,
           required: false,
-          hint: "If an image isn't specified, a default headshot placeholder image will be used",
           widget: image,
           default: assets/5star.png
         }

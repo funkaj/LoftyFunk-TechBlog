@@ -59,7 +59,6 @@ export const query = graphql`
         }
       }
     }
-
     site {
       siteMetadata {
         siteUrl
@@ -67,3 +66,4 @@ export const query = graphql`
     }
   }
 `
+//
