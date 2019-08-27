@@ -10,8 +10,17 @@ collections:
     label: Blog
     folder: blog
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: author, label: Author }
       - { name: body, label: Body, widget: markdown }
+      - {
+          label: Image,
+          name: image,
+          required: false,
+          widget: image,
+          default: /assets/bossimg.png
+        }

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import Metatags from "../components/Metatags"
-import Icon from "../images/gatsby-icon.png"
+import Icon from "../images/favicon.png"
 import { graphql } from "gatsby"
 
 function BlogPost(props) {
@@ -26,7 +26,10 @@ function BlogPost(props) {
         <h1>{title}</h1>
         <p>By: {author}</p>
         {thumbnail && (
-          <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+          <Img
+            style={{ width: "500px", margin: `0 auto` }}
+            fluid={post.frontmatter.image.childImageSharp.fluid}
+          />
         )}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
@@ -46,7 +49,7 @@ export const query = graphql`
         description
         image {
           childImageSharp {
-            resize(width: 1500, height: 1500) {
+            resize(width: 500, height: 500) {
               src
             }
             fluid(maxWidth: 786) {
@@ -56,7 +59,6 @@ export const query = graphql`
         }
       }
     }
-
     site {
       siteMetadata {
         siteUrl

@@ -1,5 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
+import favicon from "../images/favicon.png"
 
 function Metatags(props) {
   return (
@@ -62,6 +63,9 @@ function Metatags(props) {
 
         { name: "twitter:creator", content: "@saigowthamr" },
         { property: "og:site_name", content: "Reactgo" },
+      ]}
+      link={[
+        { rel: "icon", type: "image/png", sizes: "16x16", href: `${favicon}` },
       ]}
     >
       <html lang="en" />

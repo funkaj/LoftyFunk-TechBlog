@@ -2,7 +2,7 @@
 title: This is a Test
 description: My thoughts on FFVII
 date: '2019-05-30'
-image: bossimg.png
+image: /assets/bossimg.png
 author: Adam Funk
 ---
 
