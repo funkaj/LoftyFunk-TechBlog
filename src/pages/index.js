@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
   return (
-    <div style={{ backgroundColor: "#F7FFF7", height: "100vh" }}>
+    <div style={{ backgroundColor: "#F7FFF7", minHeight: "100vh" }}>
       <Layout>
         {postList.edges.map(({ node }, i) => (
           <Link to={node.fields.slug} key={i} className="link">
